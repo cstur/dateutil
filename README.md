@@ -1,4 +1,4 @@
-# usage
+# !!! NOT READY FOR RELEASE
 ## build for browser
 webpack
 
