@@ -1,0 +1,42 @@
+{
+  "name": "stur-dateutil",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src -d lib",
+    "test": "npm run build && node test/main.js",
+    "debug": "node-inspector --web-port=8888",
+    "serve": "./node_modules/.bin/live-server --host=0.0.0.0 --port=3003 --open=index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cstur/dateutil.git"
+  },
+  "author": "stur",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cstur/dateutil/issues"
+  },
+  "homepage": "https://github.com/cstur/dateutil#readme",
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.21.0",
+    "babel-loader": "^6.2.10",
+    "babel-polyfill": "^6.20.0",
+    "babel-preset-es2015": "^6.18.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "babel-preset-stage-1": "^6.16.0",
+    "babel-preset-stage-2": "^6.18.0",
+    "babel-preset-stage-3": "^6.17.0",
+    "babel-register": "^6.18.0",
+    "webpack": "^1.14.0",
+    "html-webpack-plugin": "^2.26.0",
+    "live-server": "^1.1.0"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  }
+}
